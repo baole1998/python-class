@@ -159,3 +159,4 @@ events.db
 docker_out
 docker_out_dev
 docker_out_prod
+.DS_Store
