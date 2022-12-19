@@ -1,0 +1,28 @@
+version: "3.1"
+
+nlu:
+  - intent: event
+    examples: |
+      - [tết Dương Lịch](event) là ngày bao nhiêu
+      - [tết Dương Lịch](event) là ngày nào
+      - ngày [thành lập Đảng Cộng Sản Việt Nam](event) là ngày nào
+      - ngày [thành lập Đảng cộng Sản Việt Nam](event)
+      - ngày [thành lập đảng cộng sản Việt Nam](event) là ngày nào
+      - ngày [thành lập đảng cộng sản việt nam](event) là ngày bao nhiêu
+      - ngày [thành lập đảng cộng sản](event) là ngày bao nhiêu
+      - ngày [thành lập đảng](event) là ngày bao nhiêu
+      - ngày [lễ tình nhân](event) là ngày bao nhiêu
+      - ngày [lễ tình nhân](event) là ngày nào
+      - ngày [thầy thuốc Việt Nam](event)
+      - ngày [thầy thuốc Việt Nam](event) là ngày bao nhiêu
+      - ngày [quốc tế phụ nữ](event) là ngày bao nhiêu
+      - [quốc tế phụ nữ](event) là ngày nào
+      - ngày [quốc tế hạnh phúc](event)
+      - ngày [quốc tế hạnh phúc](event) là ngày bao nhiêu
+      - [Quốc Khánh](event) là ngày bao nhiêu
+      - ngày [quốc khánh](event) là ngày nào
+
+  - synonym: thành lập đảng cộng sản việt nam
+    examples: |
+      - thành lập đảng
+      - thành lập đảng cộng sản

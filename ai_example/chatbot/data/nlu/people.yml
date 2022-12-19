@@ -1,0 +1,86 @@
+version: "3.1"
+
+nlu:
+  - intent: people_intro
+    examples: |
+      - [Hồ Chí Minh](people)
+      - [Ho Chi Minh](people)
+      - [Hồ Chí Minh](people) là ai
+      - [HCM](people) là ai
+      - [Bác Hồ](people) là ai
+      - [Hồ Chủ Tịch](people) là ai
+      - [Ho Chi Minh](people) la ai
+      - [Nguyễn Sinh Cung](people)
+      - [Nguyễn Sinh Cung](people) là ai
+      - [Nguyễn Tất Thành](people) là ai
+      - [Nguyễn Tất Thành](people)
+      - tiểu sử [Hồ Chí Minh](people)
+      - tiểu sử của [Bác Hồ](people)
+      - tieu su [Ho Chi Minh](people)
+      - [Võ Nguyên Giáp](people)
+      - [Vo Nguyen Giap](people)
+      - [Võ Nguyên Giáp](people) là ai
+      - đại tướng [Võ Nguyên Giáp](people) là ai
+      - [Vo Nguyen Giap](people) la ai
+      - tiểu sử [Võ Nguyên Giáp](people)
+      - tiểu sử của [Võ Nguyên Giáp](people)
+      - tieu su [Vo Nguyen Giap](people)
+      - [An Dương Vương](people) là ai
+      - [an dương vương](people)
+      - tiểu sử [an duong vuong](people)
+      - [Hai Bà Trưng](people) là ai
+      - [hai bà trưng](people)
+      - tiểu sử [hai ba trung](people)
+
+
+  - intent: people_birthday
+    examples: |
+      - [Hồ Chí Minh](people) sinh ngày bao nhiêu
+      - [HCM](people) sinh ngày bao nhiêu
+      - [Bác Hồ](people) sinh ngày bao nhiêu
+      - [Hồ Chí Minh](people) sinh năm bao nhiêu
+      - [Hồ Chí Minh](people) sinh ngày tháng năm nào
+      - [HCM](people) sinh năm bao nhiêu
+      - [Bác Hồ](people) sinh năm bao nhiêu
+      - [Bác Hồ](people) mất ngày bao nhiêu
+      - [Hồ Chí Minh](people) mất năm bao nhiêu
+      - [Hồ Chủ Tịch](people) mất ngày tháng năm nào
+      - [Võ Nguyên Giáp](people) sinh ngày bao nhiêu
+      - [Võ Nguyên Giáp](people) sinh năm bao nhiêu
+      - [Võ Nguyên Giáp](people) sinh ngày tháng năm nào
+      - [Võ Nguyên Giáp](people) sinh năm bao nhiêu
+      - [Võ Nguyên Giáp](people) sinh năm bao nhiêu
+      - [Võ Nguyên Giáp](people) mất ngày bao nhiêu
+      - [Võ Nguyên Giáp](people) mất năm bao nhiêu
+      - [Võ Nguyên Giáp](people) mất ngày tháng năm nào
+
+  - intent: people_place
+    examples: |
+      - [Hồ Chí Minh](people) quê ở đâu
+      - [HCM](people) sinh ra ở đâu
+      - [Bác Hồ](people) quê ở đâu
+      - quê của [Bác Hồ](people)
+      - quê hương của [Bác Hồ](people)
+      - [Võ Nguyên Giáp](people) quê ở đâu
+      - [Võ Nguyên Giáp](people) sinh ra ở đâu
+      - [Võ Nguyên Giáp](people) quê ở đâu
+      - quê của [Võ Nguyên Giáp](people)
+      - quê hương của [Võ Nguyên Giáp](people)
+
+  - synonym: Hồ Chí Minh
+    examples: |
+      - Ho Chi Minh
+      - HCM
+      - Bác Hồ
+      - Bac Ho
+      - Hồ Chủ Tịch
+      - bác Hồ
+      - bac Ho
+
+  - synonym: Võ Nguyên Giáp
+    examples: |
+      - Vo Nguyen Giap
+
+  - synonym: Hai Bà Trưng
+    examples: |
+      - hai ba trung

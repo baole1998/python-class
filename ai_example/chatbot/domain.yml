@@ -1,0 +1,216 @@
+version: "3.1"
+
+intents:
+  - math
+  - chitchat
+  - faq
+  - food_recommend
+  - bank_daily
+  - bank_balance
+  - bank_culi
+  - bank_culi_choose
+  - game
+  - game_bigsmall
+  - out_of_feature
+  - out_of_scope
+  - people_intro
+  - people_birthday
+  - people_place
+  - event
+  - story
+  - today
+
+entities:
+  - call_name
+  - last_food
+  - culi_job
+  - bet
+  - number
+  - people
+  - event
+
+actions:
+  - action_math
+  - action_food_recommend
+  - action_bank_daily
+  - action_bank_balance
+  - action_bank_culi
+  - action_bank_culi_choose
+  - action_game_bigsmall
+  - action_people_intro
+  - action_people_birthday
+  - action_people_place
+  - action_event
+  - action_story
+  - action_today
+
+slots:
+  botname:
+    type: text
+    initial_value: ApecBot
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  call_name:
+    type: text
+    initial_value: bạn
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: call_name
+
+  last_food:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: last_food
+
+  used_food:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  balance:
+    type: float
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+      - type: custom
+    max_value: 1.0
+    min_value: 0.0
+
+  daily_last_update:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  culi_last_update:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  answer:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+responses:
+  utter_math_1:
+    - text: 'Bằng {result} nhé'
+    - text: 'Chắc chắn là {result}'
+    - text: 'Bằng {result} đúng không?'
+    - text: '{result} là đáp án cuối cùng của {botname}.'
+
+  utter_math_2:
+    - text: 'Khó quá, {botname} chưa làm ra :('
+    - text: 'Từ từ, để {botname} nghĩ đã :('
+
+  utter_math_comparison_1:
+    - text: Dạ đúng rồi
+    - text: Đúng rồi, {call_name} giỏi quá
+
+  utter_math_comparison_2:
+    - text: 'Sai rồi nhé, phải bằng {result} chứ'
+    - text: 'Sai rồi, phải bằng {result} cơ'
+
+  utter_food_recommend:
+    - buttons:
+        - payload: /food_recommend{{"last_food":"{food}"}}
+          title: 'Món khác'
+      text: Hôm nay ăn {food} được này, {botname} nghĩ sẽ rất ngon đấy
+    - buttons:
+        - payload: /food_recommend{{"last_food":"{food}"}}
+          title: 'Món khác'
+      text: '{food} thì sao? {call_name} có thể thưởng thức 1 suất {food} thật ngon đấy'
+    - buttons:
+        - payload: /food_recommend{{"last_food":"{food}"}}
+          title: 'Món khác'
+      text: 'Những lúc không biết ăn gì, cứ làm 1 suất {food} cho ấm bụng. Nhớ kèm 1 cốc trà đá nữa nhé.'
+    - buttons:
+        - payload: /food_recommend{{"last_food":"{food}"}}
+          title: 'Món khác'
+      text: '{food} là dễ ăn nhất đấy, {call_name} thử xem'
+
+  utter_bank_balance:
+    - text: 'Số tiền {call_name} đang có: {balance}'
+
+  utter_bank_daily_1:
+    - text: '{call_name} đã nhận được {daily}, số dư hiện tại là {balance}. Để có thể tiếp tục nhận, vui lòng quay lại sau 12 tiếng'
+
+  utter_bank_daily_2:
+    - text: '{call_name} đang trong thời gian chờ. Vui lòng thử lại sau: {hour} giờ, {minute} phút, {second} giây nữa'
+
+  utter_bank_culi_1:
+    - buttons:
+        - payload: /bank_culi_choose{{"culi_job":"Long Biên"}}
+          title: 'Làm cu li 1 đêm ở chợ Long Biên'
+        - payload: /bank_culi_choose{{"culi_job":"Trần Duy Hưng"}}
+          title: 'Vui vẻ 1 đêm ở Trần Duy Hưng'
+        - payload: /bank_culi_choose{{"culi_job":"phố Vọng"}}
+          title: 'Đứng đường hóng gió ở phố Vọng'
+      text: '{call_name} hãy chọn công việc của mình'
+
+  utter_bank_culi_2:
+    - text: '{call_name} đã làm việc vất vả ở {culi_job} và xứng đáng nhận được {lucky}'
+    - text: 'Phần thưởng cho 1 đêm ở {culi_job} của {call_name} là {lucky}'
+    - text: 'Cần cù bù siêng năng, {call_name} đã nhận được {lucky}'
+
+  utter_bank_culi_3:
+    - text: '{call_name} đã lao động cả đêm. Hãy quay lại sau {hour} giờ, {minute} phút, {second} giây'
+
+  utter_game:
+    - text: 'Dạ, {botname} chỉ biết chơi Tài Xỉu thôi.\n{call_name} hãy chọn Tài hoặc Xỉu rồi chọn số coin nhé. VD: Tài 1000'
+
+  utter_game_bigsmall_1:
+    - text: |-
+        Chúc mừng, {call_name} đã thắng
+        Được: {prize}
+        Kết quả là {result_bet}
+        Tổng 3 mặt: {result_str} - {result_total}
+
+  utter_game_bigsmall_2:
+    - text: |-
+        Rất tiếc, {call_name} đã thua
+        Mất: {money}
+        Kết quả là {result_bet}
+        Tổng 3 mặt: {result_str} - {result_total}
+
+  utter_story:
+    - text: '{story}'
+      buttons:
+        - title: "Kể chuyện tiếp"
+          payload: "Kể chuyện tiếp"
+
+  utter_today_none:
+    - text: 'Dạ, hôm nay không có sự kiện gì ạ'
+
+  utter_today:
+    - text: "Sự kiện ngày hôm nay:
+    \n{event}
+    \n\nSinh:\n{born}
+    \n\nMất:\n{dead}"
+
+  utter_unknown:
+    - text: 'Dạ, {botname} chưa có thông tin ạ'
+
+  utter_search:
+    - text: 'Dạ, {botname} chưa biết ạ, {call_name} thử tìm kiếm trên google xem {link}'
+
+  utter_out_of_scope:
+    - text: 'Dạ, {botname} chưa hiều ý của {call_name}, {botname} sẽ học hỏi và trả lời sau nhé'
+
+  utter_out_of_feature:
+    - text: 'Dạ, {botname} không biết ạ'
+
+  utter_default:
+    - text: 'Dạ, {botname} chưa hiều ý của {call_name}, {botname} sẽ học hỏi và trả lời sau ạ'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,3 @@
+Good afternoon everyone
+Welcome to Apec Academy
+To day we are going to learn about Python.

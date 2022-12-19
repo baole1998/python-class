@@ -1,0 +1,8 @@
+version: "3.1"
+
+stories:
+
+  - story: food recommend
+    steps:
+    - intent: food_recommend
+    - action: action_food_recommend

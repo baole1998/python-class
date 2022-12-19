@@ -1,0 +1,29 @@
+version: "3.1"
+nlu:
+- intent: out_of_feature
+  examples: |
+    - biết hát không
+    - biết nhảy không
+    - cho top link bài hát
+    - hôm nay có tin gì hot không
+
+- intent: out_of_scope
+  examples: |
+    - faldfjadlfl
+    - ajajajflda fajfljdfjl fajdfl
+    - faldfjl fdajfljd fjaldf
+    - hbgaga
+    - aksdsfj
+    - oiawjf
+    - awkjfawf
+    - sdfawef ưefsdf ưefwef ưef
+    - gfdgfdgfdgfđfg
+    - 难以置信的
+    - 很难理解
+    - 做你的愛人
+    - 信じられない
+    - わかりにくい
+    - 私の趣味はジョギ
+    - 믿을 수 없는
+    - 너무 이해하기 어렵다
+    - k;sjg;s

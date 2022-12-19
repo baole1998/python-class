@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+
+  - story: people intro
+    steps:
+      - intent: people_intro
+      - action: action_people_intro
+
+  - story: people birthday
+    steps:
+      - intent: people_birthday
+      - action: action_people_birthday
+
+  - story: people place
+    steps:
+      - intent: people_place
+      - action: action_people_place

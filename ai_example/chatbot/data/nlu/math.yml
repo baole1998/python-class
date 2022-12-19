@@ -1,0 +1,12 @@
+version: "3.1"
+
+nlu:
+  - intent: math
+    examples: |
+      - 1 + 1 bằng mấy
+      - 1 + 1 bằng bao nhiêu
+      - 2 * 2 bằng bao nhiêu
+      - 5 -3 bằng mấy
+      - 2 mũ 4 bằng bao nhiêu
+      - một cộng một bằng mấy
+      - 1+1 bằng mấy

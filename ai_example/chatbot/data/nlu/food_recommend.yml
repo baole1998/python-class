@@ -1,0 +1,14 @@
+version: "3.1"
+nlu:
+- intent: food_recommend
+  examples: |
+    - hôm nay ăn gì được bot nhỉ
+    - nay ăn gì được
+    - em ơi nay nên ăn gì
+    - hôm nay ăn gì
+    - Hôm nay ăn gì
+    - hom nay an gi
+    - Hom nay an gi
+    - apecbot ơi hôm nay ăn gì được
+    - hôm nay ăn gì nhỉ
+    - ăn gì bây giờ

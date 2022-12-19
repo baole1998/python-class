@@ -1,0 +1,8 @@
+version: "3.1"
+
+stories:
+
+  - story: story
+    steps:
+      - intent: story
+      - action: action_story

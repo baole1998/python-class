@@ -1,0 +1,13 @@
+version: "3.1"
+nlu:
+  - intent: today
+    examples: |
+      - Ngày này năm xưa
+      - ngày này năm xưa
+      - Ngay nay nam xua
+      - ngay nay nam xua
+      - Sự kiện hôm nay
+      - sự kiện hôm nay
+      - Sự kiện
+      - sự kiện
+      - su kien

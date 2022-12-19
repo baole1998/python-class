@@ -1,0 +1,237 @@
+version: "3.1"
+
+nlu:
+  - intent: chitchat/1
+    examples: |
+      - chào
+      - chào em
+      - chào bot
+      - chao bot
+      - xin chao em
+      - hi
+      - hello
+      - chào b
+      - xin chào
+      - alo
+      - hey
+      - alo xio
+      - chao xìn
+      - xin chào
+      - ê bạn ơi
+      - bạn ơi
+      - Có ai chat được bây g...
+      - Có ai chat được bây giờ không
+
+  - intent: chitchat/2
+    examples: |
+      - cảm ơn
+      - cám ơn
+      - cam on
+      - cảm ơn em
+      - cảm ơn bot
+      - thanks
+      - thank
+      - thank you
+      - thanks bot
+      - thôi tùy em
+
+  - intent: chitchat/3
+    examples: |
+      - tạm biệt
+      - tam biet
+      - tạm biệt bot
+      - bye
+      - bye bye
+      - bai
+      - goodbye
+      - cút
+      - chim cút
+      - xéo
+      - goodnight
+
+  - intent: chitchat/4
+    examples: |
+      - dạo này khỏe không
+      - khỏe không
+      - khỏe không mày
+      - dạo này khỏe ko
+      - sống khỏe chứ
+      - how are you
+
+  - intent: chitchat/5
+    examples: |
+      - ăn cơm chưa
+      - cơm chưa em ơi
+
+  - intent: chitchat/6
+    examples: |
+      - đánh nhau không
+      - sang đây oánh nhau đê
+      - oảnh nhau đê
+
+  - intent: chitchat/7
+    examples: |
+      - mệt mỏi
+      - mệt quá
+      - chán quá đi
+
+  - intent: chitchat/8
+    examples: |
+      - có người yêu chưa
+      - có ny chưa
+      - có ny chưa em
+
+  - intent: chitchat/9
+    examples: |
+      - bot ngu
+      - ngu thế
+      - quá gà
+      - gà vãi
+      - quá ngu nhỉ
+      - ý là con apecbot ngu đó hihi
+
+  - intent: chitchat/10
+    examples: |
+      - đi chơi không
+      - chơi không
+      - bot đêm nay đi chơi không
+
+  - intent: chitchat/11
+    examples: |
+      - đẹp gái
+      - đẹp trai
+      - khôn thế
+      - thông minh đấy
+
+  - intent: chitchat/12
+    examples: |
+      - thương em
+      - chị thấy thương mày quá
+      - yêu em quá
+      - yêu em
+
+  - intent: chitchat/13
+    examples: |
+      - em mấy tuổi r
+      - mấy tuổi
+      - bao nhiêu tuổi rồi
+      - bé học lớp mấy
+      - bot mấy tuổi rồi
+      - bao nhiêu tuổi thế em
+
+  - intent: chitchat/14
+    examples: |
+      - chết rùi à
+      - còn sống k
+      - em còn sống k
+
+  - intent: chitchat/15
+    examples: |
+      - đi chết đi
+      - tự hủy đi
+      - tự động xóa mình đi xem nào
+      - điên hả
+
+  - intent: chitchat/16
+    examples: |
+      - Trang gà đúng không
+      - em là con chó à
+      - em bị ngu à
+      - điên à
+
+  - intent: chitchat/17
+    examples: |
+      - bạn có thể làm gì
+      - bạn có thể làm gì
+      - em có thể làm gì
+
+  - intent: chitchat/18
+    examples: |
+      - ok
+      - oki
+      - oke
+      - oki la
+
+  - intent: chitchat/19
+    examples: |
+      - Giới thiệu về apecbot
+      - giới thiệu về apecbot
+      - Giới thiệu
+      - giới thiệu
+      - Gioi thieu ve apecbot
+      - gioi thieu ve apecbot
+
+responses:
+  utter_chitchat/1:
+    - text: Dạ, {botname} chào {call_name}
+    - text: Chào {call_name}
+
+  utter_chitchat/2:
+    - text: Dạ, {botname} rất vui có thể giúp được {call_name}
+
+  utter_chitchat/3:
+    - text: Tạm biệt {call_name}
+
+  utter_chitchat/4:
+    - text: Dạ, {botname} chào {call_name}
+    - text: Chào {call_name}
+
+  utter_chitchat/5:
+    - text: '{botname} chưa ăn cơm đâu, cảm ơn {call_name} đã quan tâm nhé'
+    - text: Dạ, {botname} chưa ăn cơm ạ
+
+  utter_chitchat/6:
+    - text: Ôi ôi, {botname} chịu thôi
+    - text: Cái đấy thì {botname} xin chịu
+
+  utter_chitchat/7:
+    - text: '{call_name} hãy nghỉ ngơi 1 chút nhé'
+    - text: '{call_name} có thể nghe nhạc để thư giãn'
+
+  utter_chitchat/8:
+    - text: Dạ, {botname} chưa có người yêu, {botname} đang sợ ế đây này
+
+  utter_chitchat/9:
+    - text: '{botname} đang cố gắng để thông minh hơn ạ'
+    - text: Hãy nói chuyện với {botname} để {botname} thông minh hơn nhé
+
+  utter_chitchat/10:
+    - text: Dạ, {botname} sợ mẹ mắng
+    - text: Dạ, {botname} ngại lắm
+
+  utter_chitchat/11:
+    - text: '{botname} cảm ơn {call_name} đã khen ạ'
+    - text: '{call_name} làm {botname} ngại quá'
+
+  utter_chitchat/12:
+    - text: Dạ, {botname} cảm ơn ạ
+
+  utter_chitchat/13:
+    - text: Dạ, {botname} mới được sinh ra nên cần {call_name} dạy thêm nhiều ạ
+
+  utter_chitchat/14:
+    - text: Lúc nào {botname} cũng ở đây và sẵn sàng nói chuyện với {call_name} ạ
+
+  utter_chitchat/15:
+    - text: Hix, {call_name} làm {botname} tổn thương rồi đấy
+
+  utter_chitchat/16:
+    - text: Dạ
+
+  utter_chitchat/17:
+    - text: '{botname} có thể trò chuyện với {call_name}'
+
+  utter_chitchat/18:
+    - text: 'Dạ'
+
+  utter_chitchat/19:
+    - text: 'Dạ, mình là apecbot. Mình có thể trò chuyện với {call_name}, {call_name} thử các tính năng xem:'
+      buttons:
+        - title: "Hôm nay ăn gì"
+          payload: "Hôm nay ăn gì"
+        - title: "Kể chuyện cười"
+          payload: "Kể chuyện cười"
+        - title: "Trò chơi"
+          payload: "Trò chơi"
+        - title: "Ngày này năm xưa"
+          payload: "Ngày này năm xưa"

@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+
+  - story: game
+    steps:
+      - intent: game
+      - action: utter_game
+
+  - story: game big small
+    steps:
+      - intent: game_bigsmall
+      - action: action_game_bigsmall

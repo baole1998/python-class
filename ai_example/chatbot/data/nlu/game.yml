@@ -1,0 +1,29 @@
+version: "3.1"
+nlu:
+  - intent: game
+    examples: |
+      - Trò chơi
+      - Tro choi
+      - trò chơi
+      - tro choi
+      - Game
+      - game
+
+  - intent: game_bigsmall
+    examples: |
+      - taixiu [tài](bet) [10000](number)
+      - taixiu [xỉu](bet) [200000](number)
+      - taixiu [tài](bet) [1000000](number)
+      - taixiu [xỉu](bet) [150000](number)
+      - [tài](bet) [1000](number)
+      - [xỉu](bet) [2000](number)
+      - [tài](bet) [10000](number)
+      - [xỉu](bet) [20000](number)
+      - [tài](bet) [10000000](number)
+      - [tài](bet) [50](number)
+      - [tài](bet) [40](number)
+      - [xỉu](bet) [20](number)
+      - [xỉu](bet) [10](number)
+      - [tài](bet) [100](number)
+      - [tài](bet) [xỉu](bet)
+      - [xỉu](bet) [10000](number)

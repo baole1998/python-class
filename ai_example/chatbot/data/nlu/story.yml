@@ -1,0 +1,21 @@
+version: "3.1"
+nlu:
+  - intent: story
+    examples: |
+      - Kể chuyện cười
+      - kể chuyện cười
+      - Kể chuyện
+      - kể chuyện
+      - Kể truyện cười
+      - kể truyện cười
+      - Kể truyện
+      - kể truyện
+      - Đọc chuyện
+      - Đọc chuyện
+      - Kể chuyện khác
+      - kể chuyện khác
+      - kể tiếp
+      - kể chuyện tiếp
+      - chuyện khác
+      - truyện khác
+      - Kể truyện khác

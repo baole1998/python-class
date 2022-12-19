@@ -1,0 +1,25 @@
+version: '3.0'
+
+services:
+  rasa-core:
+    image: chatbot:latest
+    ports:
+      - "5005:5005"
+    volumes:
+      - "./docker_out/db:/code/db"
+      - "./docker_out/logs:/code/logs"
+      - "./docker_out/models:/code/models"
+    restart: always
+    command: rasa run --log-file=logs/rasa.log --enable-api --cors "*" -vv
+
+  rasa-action-server:
+    image: chatbot:latest
+    ports:
+      - "5055:5055"
+    volumes:
+      - "./docker_out/db:/code/db"
+      - "./docker_out/logs:/code/logs"
+    restart: always
+    command: rasa run --log-file=logs/rasa_action.log actions -vv
+
+

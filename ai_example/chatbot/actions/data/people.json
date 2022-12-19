@@ -1,0 +1,26 @@
+{
+  "hồ chí minh": {
+    "intro": "Hồ Chí Minh, tên khai sinh Nguyễn Sinh Cung, là một nhà cách mạng và chính khách người Việt Nam. Ông sinh ngày 19/5/1890 ở làng Kim Liên, Nam Đàn, Nghệ An và mất 02/09/1969. Ông là người sáng lập ra Đảng Cộng Sản Việt Nam và từng là Chủ tịch nước Việt Nam Dân chủ Cộng Hòa từ 1945-1969.\nWiki: https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ho_Chi_Minh_1946.jpg/220px-Ho_Chi_Minh_1946.jpg",
+    "birthday": "Hồ Chí Minh sinh ngày 19/5/1890 và mất ngày 02/09/1969",
+    "place": "Hồ Chí minh quê ở làng Kim Liên, Nam Đàn, Nghệ An"
+  },
+  "võ nguyên giáp": {
+    "intro": "Võ Nguyên Giáp, tên khai sinh là Võ Giáp, còn được gọi là tướng Giáp hoặc anh Văn, là một nhà lãnh đạo quân sự và chính trị gia người Việt Nam. Ông sinh ngày 25/08/1911 ở xã Lộc Thủy, Lệ Thủy, Quảng Bình và mất 04/10/2013. Ông là đại tướng đầu tiên của Việt Nam.\nWiki: https://vi.wikipedia.org/wiki/V%C3%B5_Nguy%C3%AAn_Gi%C3%A1p",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Mr._Vo_Nguyen_Giap.jpg/220px-Mr._Vo_Nguyen_Giap.jpg",
+    "birthday": "Võ Nguyên Giáp sinh ngày 25/08/1911 và mất ngày 04/10/2013",
+    "place": "Võ Nguyên Giáp quê ở làng An Xá, tổng Đại Phong Lộc, huyện Lệ Thủy (nay là xã Lộc Thủy, huyện Lệ Thủy, tỉnh Quảng Bình)"
+  },
+  "hai bà trưng": {
+    "intro": "Hai Bà Trưng là tên chỉ chung hai chị em Trưng Trắc và Trưng Nhị, hai người phụ nữ được đánh giá là anh hùng dân tộc của người Việt. Trong sử sách, hai bà được biết đến như là những thủ lĩnh khởi binh chống lại chính quyền đô hộ của Đông Hán, lập ra một quốc gia với kinh đô tại Mê Linh và Trưng Trắc tự phong là Nữ vương.\nWiki: https://vi.wikipedia.org/wiki/Hai_B%C3%A0_Tr%C6%B0ng",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Hai_B%C3%A0_Tr%C6%B0ng_%28tranh_%C4%90%C3%B4ng_H%E1%BB%93%29.jpeg",
+    "birthday": "Hai Bà Trưng sinh ngày 13 tháng 9 năm 14 và mất ngày 5 tháng 3 năm 43",
+    "place": "Hai Bà Trưng quê ở Mê Linh, 1 huyện nằm ở phía bắc thành phố Hà Nội"
+  },
+  "an dương vương": {
+    "intro": "An Dương vương tên thật là Thục Phán là người lập nên nước Âu Lạc, nhà nước thứ hai trong lịch sử Việt Nam sau nhà nước Văn Lang.\\n Wiki: https://vi.wikipedia.org/wiki/An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/AnDuongVuong%2C_crop.jpg/580px-AnDuongVuong%2C_crop.jpg",
+    "birthday": "An Dương Vương chưa rõ năm sinh, mất năm 179 TCN (trước công nguyên)",
+    "place": "An Dương Vương được sử sách ghi lại là vua Âu Lạc ở vùng Bắc bộ Việt Nam và phía tây tỉnh Quảng Tây (Trung Quốc)"
+  }
+}

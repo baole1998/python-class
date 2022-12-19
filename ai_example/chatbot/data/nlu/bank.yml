@@ -1,0 +1,36 @@
+version: "3.1"
+nlu:
+  - intent: bank_balance
+    examples: |
+      - tài khoản
+      - số dư
+      - tài khoản của anh
+      - số dư của chị
+      - anh có bao nhiêu tiền
+      - tôi có bao nhiều tiền
+      - tai khoan
+      - so du
+
+  - intent: bank_daily
+    examples: |
+      - điểm danh
+      - Điểm danh
+      - Điểm Danh
+      - Diem danh
+      - diem danh
+      - điểm
+      - Điểm
+      - .
+      - chấm
+      - điểm danh hàng ngày
+
+  - intent: bank_culi
+    examples: |
+      - culi
+      - cave
+  - intent: bank_culi_choose
+
+    examples: |
+      - làm cu li ở [Long biên](culi_job)
+      - hóng gió ở [phố Vọng](culi_job)
+      - vui vẻ ở [Trần Duy Hưng](culi_job)

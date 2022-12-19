@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+  - story: bank balance
+    steps:
+      - intent: bank_balance
+      - action: action_bank_balance
+
+  - story: bank daily
+    steps:
+      - intent: bank_daily
+      - action: action_bank_daily
+
+  - story: bank culi
+    steps:
+      - intent: bank_culi
+      - action: action_bank_culi
+      - intent: bank_culi_choose
+      - action: action_bank_culi_choose
