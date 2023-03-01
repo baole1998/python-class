@@ -35,17 +35,18 @@ def get_data(id):
         output = {'id': str(data['_id']),
                   'name': data['name'], 'age': data['age']}
     else:
-        output = 'No results found.'
-    return jsonify({'result': output})
+        return jsonify({'message': 'Lỗi k có id'}), 404
+
+    return jsonify({'result': output}), 200
 
 # POST new data
 
 
 @app.route('/api/data', methods=['POST'])
 def add_data():
-    data = request.get_json()
+    # data = request.get_json()
     name = data['name']
-    age = data['age']
+    # age = data['age']
     data_id = collection.insert_one({'name': name, 'age': age}).inserted_id
     new_data = collection.find_one({'_id': data_id})
     output = {'id': str(new_data['_id']),
