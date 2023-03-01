@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from pymongo import MongoClient
+from bson import ObjectId
 
 app = Flask(__name__)
 
@@ -21,7 +22,7 @@ def get_all_data():
     output = []
     for data in collection.find():
         output.append(
-            {'id': str(data['_id']), 'name': data['name'], 'age': data['age']} )
+            {'id': str(data['_id']), 'name': data['name'], 'age': data['age']})
     return jsonify({'result': output})
 
 # GET single data by id
